@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "to-telegram"
+version = "0.1.0"
+description = "Send Sentry.io alter to Telegram"
+authors = ["Denis Malin <denis@malina.page>"]
+license = "Apache License 2.0"
+readme = "README.md"
+packages = [{include = "to_telegram"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.97.0"
+pydantic = "^1.10.9"
+uvicorn = "^0.22.0"
+
+
+[tool.poetry.group.dev.dependencies]
+sentry-sdk = "^1.25.1"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
